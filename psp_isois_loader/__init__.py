@@ -6,13 +6,10 @@ try:
 except DistributionNotFound:
     pass  # package is not installed
 
-import datetime as dt
 import os
 import warnings
 
 import cdflib
-import matplotlib.dates as mdates
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import sunpy
@@ -20,7 +17,6 @@ import sunpy
 from sunpy.net import Fido
 from sunpy.net import attrs as a
 from sunpy.timeseries import TimeSeries
-from tqdm import tqdm
 
 
 def _fillval_nan(data, fillval):
