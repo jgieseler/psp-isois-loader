@@ -25,7 +25,7 @@ Caveats
 Installation
 ------------
 
-psp_isois_loader requires python >= 3.7 and SunPy >= 4.0.0
+psp_isois_loader requires python >= 3.8 and SunPy >= 4.0.0
 
 It can be installed from this repository using pip:
 
