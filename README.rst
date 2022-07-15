@@ -4,7 +4,7 @@ psp-isois-loader
 Python data loader for PSP/ISOIS instrument. At the moment provides released data obtained by SunPy through CDF files from CDAWeb for the following datasets:
 
 - PSP_ISOIS-EPIHI_L2-HET-RATES60: Parker Solar Probe ISOIS EPI-Hi Level 2 HET 1-minute Rates (`Info <https://cdaweb.gsfc.nasa.gov/misc/NotesP.html#PSP_ISOIS-EPIHI_L2-HET-RATES60>`_, `Metadata <https://cdaweb.gsfc.nasa.gov/pub/software/cdawlib/0SKELTABLES/psp_isois-epihi_l2-het-rates60_00000000_v01.skt>`_)
-- PSP_ISOIS-EPIHI_L2-HET-RATES3600: Parker Solar Probe ISOIS EPI-Hi Level 2 HET Hourly Rates (`Info <https://cdaweb.gsfc.nasa.gov/misc/NotesP.html#PSP_ISOIS-EPIHI_L2-HET-RATES3600>`_, `Metadata <https://cdaweb.gsfc.nasa.gov/pub/software/cdawlib/0SKELTABLES/psp_isois-epihi_l2-het-rates3600_00000000_v01.skt>`_) (higher coverage than ``'RATES60'`` before mid-2021)
+- PSP_ISOIS-EPIHI_L2-HET-RATES3600: Parker Solar Probe ISOIS EPI-Hi Level 2 HET Hourly Rates (`Info <https://cdaweb.gsfc.nasa.gov/misc/NotesP.html#PSP_ISOIS-EPIHI_L2-HET-RATES3600>`_, `Metadata <https://cdaweb.gsfc.nasa.gov/pub/software/cdawlib/0SKELTABLES/psp_isois-epihi_l2-het-rates3600_00000000_v01.skt>`_) (higher coverage than 'RATES60' before mid-2021)
 - PSP_ISOIS-EPILO_L2-PE: Parker Solar Probe ISOIS EPI-Lo Level 2 Particle Energy (`Info <https://cdaweb.gsfc.nasa.gov/misc/NotesP.html#PSP_ISOIS-EPILO_L2-PE>`_, `Metadata <https://cdaweb.gsfc.nasa.gov/pub/software/cdawlib/0SKELTABLES/psp_isois-epilo_l2-pe_00000000_v01.skt>`_)
 
 
@@ -12,17 +12,13 @@ Disclaimer
 ----------
 This software is provided "as is", with no guarantee. It is no official data source, and not officially endorsed by the corresponding instrument teams. Please always refer to `the instrument/data descriptions <https://spp-isois.sr.unh.edu/>`_ before using the data!
 
-
 Caveats
 -------
-
 - A lot of PSP/ISOIS datasets are not supported at the moment, for example:
-    - PSP_ISOIS-EPIHI_L2-LET1-RATES60
-    - PSP_ISOIS-EPIHI_L2-LET2-RATES60
-    - PSP_ISOIS-EPILO_L2-IC
-
-- For EPIHI energy values are only loaded from the first day of the interval! (For EPILO energy values are the mean of the whole loaded interval.)
-
+ - PSP_ISOIS-EPIHI_L2-LET1-RATES60
+ - PSP_ISOIS-EPIHI_L2-LET2-RATES60
+ - PSP_ISOIS-EPILO_L2-IC
+- For EPIHI, energy values are only loaded from the first day of the interval! (For EPILO, energy values are the mean of the whole loaded interval.)
 - EPILO energy tables changed on June 14, 2021
 
 
@@ -62,12 +58,12 @@ Input
 ~~~~~
 
 -  ``dataset``: (see above for explanation)
-        - ``'PSP_ISOIS-EPIHI_L2-HET-RATES60'``
-        - ``'PSP_ISOIS-EPIHI_L2-HET-RATES3600'`` (higher coverage than ``'RATES60'`` before mid-2021)
-        - ``'PSP_ISOIS-EPIHI_L2-LET1-RATES60'`` (not yet supported)
-        - ``'PSP_ISOIS-EPIHI_L2-LET2-RATES60'`` (not yet supported)
-        - ``'PSP_ISOIS-EPILO_L2-PE'``
-        - ``'PSP_ISOIS-EPILO_L2-IC'`` (not yet supported)
+ - ``'PSP_ISOIS-EPIHI_L2-HET-RATES60'``
+ - ``'PSP_ISOIS-EPIHI_L2-HET-RATES3600'`` (higher coverage than ``'RATES60'`` before mid-2021)
+ - ``'PSP_ISOIS-EPIHI_L2-LET1-RATES60'`` (not yet supported)
+ - ``'PSP_ISOIS-EPIHI_L2-LET2-RATES60'`` (not yet supported)
+ - ``'PSP_ISOIS-EPILO_L2-PE'``
+ - ``'PSP_ISOIS-EPILO_L2-IC'`` (not yet supported)
 -  ``startdate``, ``enddate``: datetime object or "standard" datetime string
 -  ``resample``: Pandas frequency (e.g., ``'1min'`` or ``'1h'``), or ``None``, optional. Frequency to which the original data (~24 seconds) is resamepled. By default ``'1min'``.
 -  ``path``: String, optional. Local path for storing downloaded data, e.g. ``path='data/psp/isois/'``. By default `None`. Default setting saves data according to `sunpy's Fido standards <https://docs.sunpy.org/en/stable/guide/acquiring_data/fido.html#downloading-data>`_.
