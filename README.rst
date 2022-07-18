@@ -87,7 +87,13 @@ If no ``path`` argument is provided, all data files are automatically saved in a
 Flux value threshold
 --------------------
 
-If a flux/countrate ``epilo_threshold`` is defined (as integer or float), all fluxes above this value will be replaced with ``np.nan``. This might me useful if there are some 'outlier' data points. 
+If a flux/countrate ``epilo_threshold`` is defined (as integer or float), all fluxes above this value will be replaced with ``np.nan``. This might me useful if there are some 'outlier' data points. For example, see the following two figures for ``threshold=None`` and ``threshold=1000``, respectively:
+
+|psp_isois_epilo_org|
+|psp_isois_epilo_threshold|
+
+.. |psp_isois_epilo_org| image:: https://github.com/jgieseler/wind-3dp-loader/raw/main/docs/psp_isois_epilo_org.png
+.. |psp_isois_epilo_threshold| image:: https://github.com/jgieseler/wind-3dp-loader/raw/main/docs/psp_isois_epilo_threshold.png
 
 License
 -------
