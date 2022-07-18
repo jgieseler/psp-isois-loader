@@ -92,8 +92,8 @@ If a flux/countrate ``epilo_threshold`` is defined (as integer or float), all fl
 |psp_isois_epilo_org|
 |psp_isois_epilo_threshold|
 
-.. |psp_isois_epilo_org| image:: https://github.com/jgieseler/wind-3dp-loader/raw/main/docs/psp_isois_epilo_org.png
-.. |psp_isois_epilo_threshold| image:: https://github.com/jgieseler/wind-3dp-loader/raw/main/docs/psp_isois_epilo_threshold.png
+.. |psp_isois_epilo_org| image:: https://github.com/jgieseler/psp-isois-loader/raw/main/docs/psp_isois_epilo_org.png
+.. |psp_isois_epilo_threshold| image:: https://github.com/jgieseler/psp-isois-loader/raw/main/docs/psp_isois_epilo_threshold.png
 
 License
 -------
