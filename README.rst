@@ -46,7 +46,7 @@ returns Pandas dataframe(s) of the PSP/ISOIS measurements.
    from psp_isois_loader import psp_isois_load
    import datetime as dt
 
-   df, meta = psp_isois_load(dataset="WI_SFPD_3DP",
+   df, meta = psp_isois_load(dataset="PSP_ISOIS-EPILO_L2-PE",
                            startdate=dt.datetime(2021, 4, 16),
                            enddate="2021/04/20",
                            resample="1min",
