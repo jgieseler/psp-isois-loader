@@ -1,3 +1,7 @@
+This package is not maintained any more! Please use https://github.com/serpentine-h2020/SEPpy instead!
+======================================================================================================
+
+
 psp-isois-loader
 ================
 
@@ -21,19 +25,6 @@ Caveats
 - For EPIHI, energy values are only loaded from the first day of the interval! (For EPILO, energy values are the mean of the whole loaded interval.)
 - EPILO energy tables changed on June 14, 2021
 
-
-Installation
-------------
-
-psp_isois_loader requires python >= 3.8 and SunPy >= 4.0.0
-
-It can be installed from this repository using pip:
-
-.. code:: bash
-
-    pip install git+https://github.com/jgieseler/psp-isois-loader
-
-**Note:** Windows users might `need to install git <https://github.com/git-guides/install-git>`_ for this to work!
 
 Usage
 -----
